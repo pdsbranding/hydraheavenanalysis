@@ -27,7 +27,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--white);
@@ -36,152 +35,59 @@
       display: flex; align-items: center; justify-content: space-between;
       height: 60px;
     }
-    .nav-logo {
-      font-weight: 700; font-size: 14px;
-      letter-spacing: .12em; text-transform: uppercase; color: var(--black);
-    }
-    .nav-logo em {
-      font-family: 'Times New Roman', serif;
-      font-style: italic; font-weight: 400; font-size: 16px;
-    }
+    .nav-logo { font-weight: 700; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--black); }
+    .nav-logo em { font-family: 'Times New Roman', serif; font-style: italic; font-weight: 400; font-size: 16px; }
     nav ul { list-style: none; display: flex; gap: 32px; }
-    nav a {
-      text-decoration: none; font-size: 11px; font-weight: 600;
-      letter-spacing: .1em; text-transform: uppercase; color: var(--light);
-      transition: color .15s;
-    }
+    nav a { text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--light); transition: color .15s; }
     nav a:hover { color: var(--black); }
 
-    /* ── HERO ── */
-    .hero {
-      background: var(--black);
-      color: var(--white);
-      padding: 120px 56px 100px;
-    }
+    .hero { background: var(--black); color: var(--white); padding: 120px 56px 100px; }
     .hero-inner { max-width: 900px; margin: 0 auto; }
-    .hero-eyebrow {
-      font-size: 11px; font-weight: 600; letter-spacing: .2em;
-      text-transform: uppercase; color: var(--light); margin-bottom: 28px;
-    }
-    .hero h1 {
-      font-size: clamp(48px, 7vw, 84px);
-      font-weight: 700; line-height: 1.0; margin-bottom: 32px; color: var(--white);
-      letter-spacing: -.02em;
-    }
-    .hero h1 em {
-      font-family: 'Times New Roman', serif;
-      font-style: italic; font-weight: 400; color: var(--white);
-    }
-    .hero-sub {
-      font-size: 18px; color: #999; max-width: 500px; margin-bottom: 48px; line-height: 1.65;
-    }
+    .hero-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--light); margin-bottom: 28px; }
+    .hero h1 { font-size: clamp(48px, 7vw, 84px); font-weight: 700; line-height: 1.0; margin-bottom: 32px; color: var(--white); letter-spacing: -.02em; }
+    .hero h1 em { font-family: 'Times New Roman', serif; font-style: italic; font-weight: 400; color: var(--white); }
+    .hero-sub { font-size: 18px; color: #999; max-width: 500px; margin-bottom: 48px; line-height: 1.65; }
     .hero-rule { width: 40px; height: 1px; background: #444; margin-bottom: 24px; }
     .hero-meta { font-size: 13px; color: #666; letter-spacing: .04em; }
     .hero-meta strong { color: var(--white); font-weight: 600; }
 
-    /* ── SECTIONS ── */
     section { padding: 96px 56px; border-bottom: 1px solid var(--rule); }
     section:nth-child(even) { background: var(--bg-alt); }
     .section-inner { max-width: 900px; margin: 0 auto; }
-
-    .section-num {
-      font-size: 11px; font-weight: 600; letter-spacing: .16em;
-      text-transform: uppercase; color: var(--light); margin-bottom: 6px;
-      display: block;
-    }
+    .section-num { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--light); margin-bottom: 6px; display: block; }
     .section-rule { width: 32px; height: 1px; background: var(--rule); margin: 12px 0 28px; }
 
-    h2 {
-      font-size: clamp(32px, 4.5vw, 52px);
-      font-weight: 700; line-height: 1.08; margin-bottom: 28px;
-      color: var(--black); letter-spacing: -.02em;
-    }
-    h2 em {
-      font-family: 'Times New Roman', serif;
-      font-style: italic; font-weight: 400;
-    }
-    h3 {
-      font-size: 14px; font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--black);
-      margin-top: 52px; margin-bottom: 16px;
-      padding-bottom: 10px; border-bottom: 1px solid var(--rule);
-    }
+    h2 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 700; line-height: 1.08; margin-bottom: 28px; color: var(--black); letter-spacing: -.02em; }
+    h2 em { font-family: 'Times New Roman', serif; font-style: italic; font-weight: 400; }
+    h3 { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--black); margin-top: 52px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
     p { margin-bottom: 18px; color: var(--mid); }
     p:last-child { margin-bottom: 0; }
 
-    /* ── CALLOUT ── */
-    .callout {
-      border-left: 2px solid var(--black);
-      padding: 20px 28px;
-      margin: 32px 0;
-      background: var(--bg-alt);
-    }
+    .callout { border-left: 2px solid var(--black); padding: 20px 28px; margin: 32px 0; background: var(--bg-alt); }
     .callout p { color: var(--dark); margin-bottom: 0; }
     .callout strong { color: var(--black); }
 
-    /* ── PULL QUOTE ── */
-    .pull-quote {
-      font-family: 'Times New Roman', serif;
-      font-style: italic;
-      font-size: clamp(22px, 2.8vw, 30px);
-      line-height: 1.45;
-      color: var(--black);
-      padding: 36px 0;
-      margin: 40px 0;
-      border-top: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
-    }
+    .pull-quote { font-family: 'Times New Roman', serif; font-style: italic; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.45; color: var(--black); padding: 36px 0; margin: 40px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 
-    /* ── TABLES ── */
     .table-wrap { overflow-x: auto; margin: 28px 0; }
     table { width: 100%; border-collapse: collapse; font-size: 15px; }
     thead tr { border-bottom: 2px solid var(--black); }
-    thead th {
-      padding: 12px 16px; text-align: left;
-      font-size: 11px; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--black); background: var(--white);
-    }
+    thead th { padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--black); background: var(--white); }
     section:nth-child(even) thead th { background: var(--bg-alt); }
     tbody tr { border-bottom: 1px solid var(--rule); }
     tbody td { padding: 13px 16px; color: var(--mid); }
     tbody td:first-child { font-weight: 600; color: var(--dark); }
     .gap-neg  { color: var(--black); font-weight: 700; }
     .gap-none { color: var(--light); font-style: italic; }
-    .highlight-row td { background: var(--bg-alt); }
     .market-total td { font-weight: 700; color: var(--black); border-top: 2px solid var(--black); }
 
-    /* ── COST CARDS ── */
-    .cost-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--rule);
-      border: 1px solid var(--rule);
-      margin: 36px 0;
-    }
-    .cost-card {
-      background: var(--white);
-      padding: 28px 24px;
-    }
+    .cost-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 36px 0; }
+    .cost-card { background: var(--white); padding: 28px 24px; }
     section:nth-child(even) .cost-card { background: var(--bg-alt); }
-    .cost-num {
-      font-size: 11px; font-weight: 700; letter-spacing: .12em;
-      text-transform: uppercase; color: var(--light); margin-bottom: 12px;
-    }
+    .cost-num { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--light); margin-bottom: 12px; }
     .cost-title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
     .cost-card p { font-size: 14px; color: var(--mid); margin-bottom: 0; line-height: 1.6; }
 
-    /* ── FINDINGS ── */
-    .findings { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0; }
-    .finding {
-      border: 1px solid var(--rule);
-      padding: 8px 18px; font-size: 13px; font-weight: 600;
-      color: var(--mid); letter-spacing: .02em;
-    }
-    .finding.good { border-color: var(--black); color: var(--black); }
-    .finding.bad  { background: var(--black); color: var(--white); border-color: var(--black); }
-
-    /* ── INSTAGRAM ── */
     .insta-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 28px 0; }
     .insta-card { background: var(--white); padding: 28px 24px; }
     section:nth-child(even) .insta-card { background: var(--bg-alt); }
@@ -189,70 +95,33 @@
     .insta-stat { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
     .insta-stat:last-child { border-bottom: none; }
     .stat-label { color: var(--light); }
-    .stat-val   { font-weight: 700; color: var(--dark); }
-    .stat-bad   { color: var(--black); }
-    .stat-ok    { color: var(--mid); }
+    .stat-val { font-weight: 700; color: var(--dark); }
+    .stat-bad { color: var(--black); }
 
-    /* ── TWO-COL LISTS ── */
     .two-col-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 36px 0; }
     .list-block { padding: 32px 28px; background: var(--white); }
     section:nth-child(even) .list-block { background: var(--bg-alt); }
-    .list-block-label {
-      font-size: 11px; font-weight: 700; letter-spacing: .14em;
-      text-transform: uppercase; color: var(--light); margin-bottom: 20px;
-    }
+    .list-block-label { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--light); margin-bottom: 20px; }
     .list-block ul { padding-left: 18px; }
     .list-block li { margin-bottom: 10px; font-size: 15px; color: var(--mid); line-height: 1.6; }
 
-    /* ── PHASE CARDS ── */
     .phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 36px; }
     .phase-card { padding: 32px 28px; background: var(--white); }
     section:nth-child(even) .phase-card { background: var(--bg-alt); }
-    .phase-num {
-      font-size: 11px; font-weight: 700; letter-spacing: .14em;
-      text-transform: uppercase; color: var(--light); margin-bottom: 14px;
-    }
-    .phase-card h3 {
-      font-size: 18px; font-weight: 700; letter-spacing: 0;
-      text-transform: none; border-bottom: none; padding-bottom: 0;
-      margin-top: 0; margin-bottom: 16px; color: var(--black);
-    }
+    .phase-num { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--light); margin-bottom: 14px; }
+    .phase-card h3 { font-size: 18px; font-weight: 700; letter-spacing: 0; text-transform: none; border-bottom: none; padding-bottom: 0; margin-top: 0; margin-bottom: 16px; color: var(--black); }
     .phase-card ul { padding-left: 18px; }
     .phase-card li { margin-bottom: 10px; font-size: 14px; color: var(--mid); line-height: 1.6; }
 
-    /* ── TRADE BLOCK ── */
-    .trade-block {
-      border: 1px solid var(--rule);
-      padding: 48px;
-      margin: 36px 0;
-    }
-    .trade-block h3 {
-      font-size: 14px; font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--black);
-      margin-top: 0; margin-bottom: 8px; border-bottom: none; padding-bottom: 0;
-    }
+    .trade-block { border: 1px solid var(--rule); padding: 48px; margin: 36px 0; }
+    .trade-block h3 { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--black); margin-top: 0; margin-bottom: 8px; border-bottom: none; padding-bottom: 0; }
     .trade-block p { color: var(--mid); }
-    .trade-highlight {
-      font-size: 48px; font-weight: 700; letter-spacing: -.02em;
-      color: var(--black); margin: 16px 0; line-height: 1;
-    }
+    .trade-highlight { font-size: 48px; font-weight: 700; letter-spacing: -.02em; color: var(--black); margin: 16px 0; line-height: 1; }
     .trade-rule { width: 100%; height: 1px; background: var(--rule); margin: 24px 0; }
 
-    /* ── FOOTER ── */
-    footer {
-      background: var(--black);
-      color: var(--white);
-      padding: 72px 56px;
-      text-align: center;
-    }
-    .contact-q {
-      font-size: 11px; font-weight: 600; letter-spacing: .2em;
-      text-transform: uppercase; color: #555; margin-bottom: 20px;
-    }
-    .contact-line {
-      font-size: 24px; font-weight: 700; color: var(--white);
-      margin-bottom: 8px; letter-spacing: -.01em;
-    }
+    footer { background: var(--black); color: var(--white); padding: 72px 56px; text-align: center; }
+    .contact-q { font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #555; margin-bottom: 20px; }
+    .contact-line { font-size: 24px; font-weight: 700; color: var(--white); margin-bottom: 8px; letter-spacing: -.01em; }
     .contact-line a { color: var(--white); text-decoration: none; }
     .contact-line a:hover { color: #ccc; }
     .footer-credit { font-size: 13px; color: #444; margin-top: 36px; }
@@ -272,20 +141,18 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">Hydra<em>Heaven</em></div>
   <ul>
     <li><a href="#audit">Audit</a></li>
     <li><a href="#competitive">Pricing</a></li>
-    <li><a href="#moat">Your Edge</a></li>
+    <li><a href="#moat">Your Advantage</a></li>
     <li><a href="#overhaul">Site Overhaul</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#partnership">Partnership</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">Business Consolidation & Growth Strategy</div>
@@ -296,76 +163,50 @@
   </div>
 </div>
 
-<!-- 01 CURRENT STATE -->
 <section id="current">
   <div class="section-inner">
     <span class="section-num">01 &mdash; Current State</span>
     <div class="section-rule"></div>
     <h2>Two brands.<br><em>One business.</em></h2>
     <p>Same address. Same phone number. Same owner. Two websites competing against each other for the same clients. Here's what that split is costing you:</p>
-
     <div class="cost-cards">
-      <div class="cost-card">
-        <div class="cost-num">01</div>
-        <div class="cost-title">Fragmented SEO</div>
-        <p>Your two sites compete with each other for the same search terms instead of combining their authority.</p>
-      </div>
-      <div class="cost-card">
-        <div class="cost-num">02</div>
-        <div class="cost-title">Two Booking Flows</div>
-        <p>Clients who want a facial + massage have to navigate two separate sites and booking systems.</p>
-      </div>
-      <div class="cost-card">
-        <div class="cost-num">03</div>
-        <div class="cost-title">No Single Front Door</div>
-        <p>Neither site showcases your full offering — the combo packages that make you genuinely unique.</p>
-      </div>
+      <div class="cost-card"><div class="cost-num">01</div><div class="cost-title">Fragmented SEO</div><p>Your two sites compete with each other for the same search terms instead of combining their authority.</p></div>
+      <div class="cost-card"><div class="cost-num">02</div><div class="cost-title">Two Booking Flows</div><p>Clients who want a facial + massage have to navigate two separate sites and booking systems.</p></div>
+      <div class="cost-card"><div class="cost-num">03</div><div class="cost-title">No Single Front Door</div><p>Neither site showcases your full offering — the combo packages that make you genuinely unique.</p></div>
     </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>What</th><th>HydraHeaven</th><th>Massage by Fernando</th></tr></thead>
-        <tbody>
-          <tr><td>Address</td><td>1631 Kapiolani Blvd, Suite 101</td><td>1631 Kapiolani Blvd, Suite 101</td></tr>
-          <tr><td>Phone</td><td>(808) 479-1725</td><td>(808) 479-1725</td></tr>
-          <tr><td>Owner</td><td>Fernando Torres</td><td>Fernando Torres</td></tr>
-          <tr><td>Overlap</td><td>Lists massage packages</td><td>Links to HydraHeaven for facials</td></tr>
-          <tr><td>Cross-reference</td><td>Pricing page notes all massages by Fernando</td><td>&mdash;</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout">
-      <p>The informal umbrella already exists — it just hasn't been made official. Consolidate everything under <strong>hydraheaven.com</strong>, redirect massagebyfernando.com to it, and build a site that leads with your full offering.</p>
-    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>What</th><th>HydraHeaven</th><th>Massage by Fernando</th></tr></thead>
+      <tbody>
+        <tr><td>Address</td><td>1631 Kapiolani Blvd, Suite 101</td><td>1631 Kapiolani Blvd, Suite 101</td></tr>
+        <tr><td>Phone</td><td>(808) 479-1725</td><td>(808) 479-1725</td></tr>
+        <tr><td>Owner</td><td>Fernando Torres</td><td>Fernando Torres</td></tr>
+        <tr><td>Overlap</td><td>Lists massage packages</td><td>Links to HydraHeaven for facials</td></tr>
+        <tr><td>Cross-reference</td><td>Pricing page notes all massages by Fernando</td><td>&mdash;</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><p>The informal umbrella already exists — it just hasn't been made official. Consolidate everything under <strong>hydraheaven.com</strong>, redirect massagebyfernando.com to it, and build a site that leads with your full offering.</p></div>
   </div>
 </section>
 
-<!-- 02 SEO AUDIT -->
 <section id="audit">
   <div class="section-inner">
     <span class="section-num">02 &mdash; SEO & Digital Presence</span>
     <div class="section-rule"></div>
     <h2>Where you stand.<br><em>Where the gaps are.</em></h2>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Signal</th><th>HydraHeaven</th><th>MassageByFernando</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td>"HydraFacial Honolulu" ranking</td><td>#2</td><td>N/A</td><td>Above Pure Skin by Maggie</td></tr>
-          <tr><td>"Lomi Lomi massage Honolulu"</td><td>N/A</td><td>Not found</td><td>Invisible for core massage keywords</td></tr>
-          <tr><td>"Massage facial combo Honolulu"</td><td>Not found</td><td>Not found</td><td>Zero visibility for your flagship</td></tr>
-          <tr><td>Google Business Profile</td><td>Unclear</td><td>Unclear</td><td>Consolidate to one listing</td></tr>
-          <tr><td>Yelp</td><td>Yes</td><td>Yes</td><td>Two listings &mdash; should point to one URL</td></tr>
-          <tr><td>Facebook</td><td>None</td><td>Active</td><td>Personal brand equity lives here</td></tr>
-          <tr><td>Instagram</td><td>@hydra.heaven</td><td>@massageartista</td><td>Both weak &mdash; see below</td></tr>
-          <tr><td>Email</td><td>Yahoo</td><td>Yahoo</td><td>Signals hobby, not business</td></tr>
-        </tbody>
-      </table>
-    </div>
-
+    <div class="table-wrap"><table>
+      <thead><tr><th>Signal</th><th>HydraHeaven</th><th>MassageByFernando</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>"HydraFacial Honolulu" ranking</td><td>#2</td><td>N/A</td><td>Above Pure Skin by Maggie</td></tr>
+        <tr><td>"Lomi Lomi massage Honolulu"</td><td>N/A</td><td>Not found</td><td>Invisible for core massage keywords</td></tr>
+        <tr><td>"Massage facial combo Honolulu"</td><td>Not found</td><td>Not found</td><td>Zero visibility for your flagship</td></tr>
+        <tr><td>Google Business Profile</td><td>Unclear</td><td>Unclear</td><td>Consolidate to one listing</td></tr>
+        <tr><td>Yelp</td><td>Yes</td><td>Yes</td><td>Two listings &mdash; should point to one URL</td></tr>
+        <tr><td>Facebook</td><td>None</td><td>Active</td><td>Personal brand equity lives here</td></tr>
+        <tr><td>Instagram</td><td>@hydra.heaven</td><td>@massageartista</td><td>Both weak &mdash; see below</td></tr>
+        <tr><td>Email</td><td>Yahoo</td><td>Yahoo</td><td>Signals hobby, not business</td></tr>
+      </tbody>
+    </table></div>
     <div class="pull-quote">"A search for 'massage facial combo Honolulu' returns zero results for either site. This is your flagship offering — and it has no search presence whatsoever."</div>
-
     <h3>Instagram Audit</h3>
     <div class="insta-compare">
       <div class="insta-card">
@@ -385,92 +226,72 @@
         <div class="insta-stat"><span class="stat-label">Story Highlights</span><span class="stat-val stat-bad">None</span></div>
       </div>
     </div>
-
-    <div class="callout">
-      <p>@hydra.heaven follows 606 accounts but has only 162 followers — signals an abandoned follow-for-follow strategy and <strong>actively hurts credibility</strong>. The bio leads with "very competitive prices" — wrong tone for a premium wellness brand. Rewrite: <strong>"Honolulu's only HydraFacial + Lomi Lomi massage studio. By appointment."</strong></p>
-    </div>
+    <div class="callout"><p>@hydra.heaven follows 606 accounts but has only 162 followers — signals an abandoned follow-for-follow strategy and <strong>actively hurts credibility</strong>. The bio leads with "very competitive prices" — wrong tone for a premium wellness brand. Rewrite: <strong>"Honolulu's only HydraFacial + Lomi Lomi massage studio. By appointment."</strong></p></div>
   </div>
 </section>
 
-<!-- 03 COMPETITIVE -->
 <section id="competitive">
   <div class="section-inner">
     <span class="section-num">03 &mdash; Competitive Pricing</span>
     <div class="section-rule"></div>
     <h2>You're charging less than<br><em>half of what the market will bear.</em></h2>
     <p>Pure Skin by Maggie (401 Kamakee St) is your self-identified top competitor. She's a solo esthetician — HydraFacial only, no massage.</p>
-
     <h3>HydraFacial &mdash; Fernando vs. Pure Skin by Maggie</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Treatment</th><th>HydraHeaven</th><th>Pure Skin by Maggie</th><th>Recommended</th><th>Gap</th></tr></thead>
-        <tbody>
-          <tr><td>Signature (30 min)</td><td>$115</td><td>$195</td><td>$150&ndash;$165</td><td class="gap-neg">&minus;$80</td></tr>
-          <tr><td>Deluxe (45 min)</td><td>$130</td><td>$285</td><td>$200&ndash;$220</td><td class="gap-neg">&minus;$155</td></tr>
-          <tr><td>Platinum (60 min)</td><td>$160</td><td>$365</td><td>$245&ndash;$265</td><td class="gap-neg">&minus;$205</td></tr>
-          <tr><td>Add-on (Perk Lip/Eye)</td><td>$20</td><td>Bundled</td><td>$25&ndash;$30</td><td>&mdash;</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="callout">
-      <p>This is not a positioning strategy — it's undervaluation. A price correction keeps you as the accessible, personal-touch option while eliminating the perception that cheaper means lesser quality.</p>
-    </div>
-
+    <div class="table-wrap"><table>
+      <thead><tr><th>Treatment</th><th>HydraHeaven</th><th>Pure Skin by Maggie</th><th>Recommended</th><th>Gap</th></tr></thead>
+      <tbody>
+        <tr><td>Signature (30 min)</td><td>$115</td><td>$195</td><td>$150&ndash;$165</td><td class="gap-neg">&minus;$80</td></tr>
+        <tr><td>Deluxe (45 min)</td><td>$130</td><td>$285</td><td>$200&ndash;$220</td><td class="gap-neg">&minus;$155</td></tr>
+        <tr><td>Platinum (60 min)</td><td>$160</td><td>$365</td><td>$245&ndash;$265</td><td class="gap-neg">&minus;$205</td></tr>
+        <tr><td>Add-on (Perk Lip/Eye)</td><td>$20</td><td>Bundled</td><td>$25&ndash;$30</td><td>&mdash;</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><p>This is not a positioning strategy — it's undervaluation. A price correction keeps you as the accessible, personal-touch option while eliminating the perception that cheaper means lesser quality.</p></div>
     <h3>Massage &mdash; Fernando vs. Hawaii Natural Therapy</h3>
     <p>Hawaii Natural Therapy (350 Ward Ave) is the relevant peer. Fernando is roughly 15&ndash;20% below market across all durations.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Duration</th><th>Fernando (In-House)</th><th>Fernando (Out-Call)</th><th>Hawaii Natural Therapy</th><th>Recommended</th></tr></thead>
-        <tbody>
-          <tr><td>60 min</td><td>$100</td><td>$120</td><td>$120&ndash;$135</td><td>$115&ndash;$120</td></tr>
-          <tr><td>90 min</td><td>$140</td><td>$160</td><td>$160&ndash;$175</td><td>$155&ndash;$160</td></tr>
-          <tr><td>120 min</td><td>$170</td><td>$180</td><td>$210&ndash;$225</td><td>$185&ndash;$195</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="callout">
-      <p>Massage price adjustments are less urgent than the HydraFacial correction, but a <strong>$10&ndash;$20 increase across the board</strong> is well within market range and adds up meaningfully over a full client roster.</p>
-    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Duration</th><th>Fernando (In-House)</th><th>Fernando (Out-Call)</th><th>Hawaii Natural Therapy</th><th>Recommended</th></tr></thead>
+      <tbody>
+        <tr><td>60 min</td><td>$100</td><td>$120</td><td>$120&ndash;$135</td><td>$115&ndash;$120</td></tr>
+        <tr><td>90 min</td><td>$140</td><td>$160</td><td>$160&ndash;$175</td><td>$155&ndash;$160</td></tr>
+        <tr><td>120 min</td><td>$170</td><td>$180</td><td>$210&ndash;$225</td><td>$185&ndash;$195</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><p>Massage price adjustments are less urgent than the HydraFacial correction, but a <strong>$10&ndash;$20 increase across the board</strong> is well within market range and adds up meaningfully over a full client roster.</p></div>
   </div>
 </section>
 
-<!-- 04 MOAT -->
 <section id="moat">
   <div class="section-inner">
-    <span class="section-num">04 &mdash; Your Competitive Moat</span>
+    <span class="section-num">04 &mdash; Your Competitive Edge</span>
     <div class="section-rule"></div>
     <h2>Nobody does<br><em>what you do.</em></h2>
-
     <div class="pull-quote">Maggie does facials. Other massage therapists do massage. You do both under one roof — by appointment, with a personal touch no chain can replicate.</div>
-
     <h3>Combo Packages &mdash; Your Exclusive Offering</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Package</th><th>HydraHeaven</th><th>Any Competitor</th></tr></thead>
-        <tbody>
-          <tr><td>Deluxe HydraFacial + 30 min massage</td><td>$150</td><td class="gap-none">Not available anywhere</td></tr>
-          <tr><td>Deluxe HydraFacial + 60 min massage</td><td>$170</td><td class="gap-none">Not available anywhere</td></tr>
-          <tr><td>Deluxe HydraFacial + 90 min massage</td><td>$200</td><td class="gap-none">Not available anywhere</td></tr>
-          <tr><td>Platinum HydraFacial + 60 min massage</td><td>$210</td><td class="gap-none">Not available anywhere</td></tr>
-          <tr><td>Nirvana: Platinum + 120 min massage</td><td>$275</td><td class="gap-none">Not available anywhere</td></tr>
-          <tr><td>Hydra Party (up to 6 persons)</td><td>$1,800</td><td class="gap-none">Not available anywhere</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="callout">
-      <p>Your combo packages are a genuine moat. This is the product that should <strong>lead the new website</strong>, anchor the SEO strategy, and be the centerpiece of every social post.</p>
-    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Package</th><th>HydraHeaven</th><th>Any Competitor</th></tr></thead>
+      <tbody>
+        <tr><td>In &amp; out</td><td>$150</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>Signature plus</td><td>$170</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>In the sky</td><td>$200</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>In the clouds</td><td>$230</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>Deluxe plus</td><td>$180</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>Almost heaven</td><td>$210</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>At the gates</td><td>$230</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>Nirvana (Me Day)</td><td>$275</td><td class="gap-none">Not available anywhere</td></tr>
+        <tr><td>Hydra Party (up to 6 persons)</td><td>$1,800</td><td class="gap-none">Not available anywhere</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><p>Your combo packages are something no competitor can match. This is the product that should <strong>lead the new website</strong>, anchor the SEO strategy, and be the centerpiece of every social post.</p></div>
   </div>
 </section>
 
-<!-- 05 OVERHAUL -->
 <section id="overhaul">
   <div class="section-inner">
     <span class="section-num">05 &mdash; Website & Brand Overhaul</span>
     <div class="section-rule"></div>
     <h2>The current site<br><em>undersells everything.</em></h2>
     <p>This isn't a cosmetic refresh — it's a repositioning to match what you actually deliver.</p>
-
     <div class="two-col-lists">
       <div class="list-block">
         <div class="list-block-label">What's wrong right now</div>
@@ -495,23 +316,17 @@
         </ul>
       </div>
     </div>
-
-    <div class="callout">
-      <p><strong>Lead with the combo packages.</strong> "Honolulu's only HydraFacial + Lomi Lomi massage studio" is a more powerful opening line than "3 Steps, 30 Minutes." That's your moat — put it front and center.</p>
-    </div>
-
+    <div class="callout"><p><strong>Lead with the combo packages.</strong> "Honolulu's only HydraFacial + Lomi Lomi massage studio" is a more powerful opening line than "3 Steps, 30 Minutes." That's your advantage — put it front and center.</p></div>
     <div class="pull-quote">"You're not going to a salon. You're getting personal, expert attention from a specialist in a private studio. That's a luxury signal when framed correctly."</div>
   </div>
 </section>
 
-<!-- 06 ROADMAP -->
 <section id="roadmap">
   <div class="section-inner">
     <span class="section-num">06 &mdash; Consolidation Roadmap</span>
     <div class="section-rule"></div>
     <h2>Nine months.<br><em>No overwhelm.</em></h2>
     <p>Each phase can be evaluated before moving to the next. Nothing happens all at once.</p>
-
     <div class="phases">
       <div class="phase-card">
         <div class="phase-num">Phase 1 &mdash; Months 1&ndash;2</div>
@@ -550,28 +365,23 @@
   </div>
 </section>
 
-<!-- 07 PARTNERSHIP -->
 <section id="partnership">
   <div class="section-inner">
     <span class="section-num">07 &mdash; Market Rate & Proposed Partnership</span>
     <div class="section-rule"></div>
     <h2>What this work<br><em>is actually worth.</em></h2>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Deliverable</th><th>Market Low</th><th>Market High</th></tr></thead>
-        <tbody>
-          <tr><td>Business consulting & market analysis</td><td>$1,500</td><td>$4,000</td></tr>
-          <tr><td>Brand identity (logo, color palette, typography)</td><td>$1,500</td><td>$5,000</td></tr>
-          <tr><td>Website design & build</td><td>$3,000</td><td>$8,000</td></tr>
-          <tr><td>Photo direction & image curation (AI-assisted)</td><td>$500</td><td>$2,000</td></tr>
-          <tr><td>SEO setup & consolidation</td><td>$500</td><td>$1,500</td></tr>
-          <tr><td>Ongoing advisory (per month)</td><td>$500</td><td>$1,500</td></tr>
-          <tr class="market-total"><td>Total Project Estimate</td><td>$7,500</td><td>$21,500</td></tr>
-        </tbody>
-      </table>
-    </div>
-
+    <div class="table-wrap"><table>
+      <thead><tr><th>Deliverable</th><th>Market Low</th><th>Market High</th></tr></thead>
+      <tbody>
+        <tr><td>Business consulting & market analysis</td><td>$1,500</td><td>$4,000</td></tr>
+        <tr><td>Brand identity (logo, color palette, typography)</td><td>$1,500</td><td>$5,000</td></tr>
+        <tr><td>Website design & build</td><td>$3,000</td><td>$8,000</td></tr>
+        <tr><td>Photo direction & image curation (AI-assisted)</td><td>$500</td><td>$2,000</td></tr>
+        <tr><td>SEO setup & consolidation</td><td>$500</td><td>$1,500</td></tr>
+        <tr><td>Ongoing advisory (per month)</td><td>$500</td><td>$1,500</td></tr>
+        <tr class="market-total"><td>Total Project Estimate</td><td>$7,500</td><td>$21,500</td></tr>
+      </tbody>
+    </table></div>
     <div class="trade-block">
       <h3>The Proposed Trade</h3>
       <p>In exchange for the full scope of work outlined in this proposal:</p>
@@ -580,12 +390,10 @@
       <p>One Deluxe Plus session (60-min HydraFacial + 30-min massage) and two 90-minute massages per month — billed to insurance where applicable, bringing the actual cost significantly lower.</p>
       <p style="margin-top:14px; font-size:15px; color:var(--light);">The arrangement runs for 18 sessions over approximately 9 months — aligned with the project timeline, keeping both parties engaged and accountable throughout.</p>
     </div>
-
     <p>That said — open to discussing what feels fair and comfortable for both of us.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p class="contact-q">Questions or ready to get started?</p>
   <p class="contact-line">
@@ -597,4 +405,4 @@
 </footer>
 
 </body>
-</html>
+  </html>
